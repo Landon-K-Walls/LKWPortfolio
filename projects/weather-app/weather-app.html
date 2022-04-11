@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Sunrise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div><a href="../../index.html">Sunrise</a></div>
+    </nav>
+
+    <form action="javascript:void(0);" class="in-form active">
+        <input id="location-text" type="text" name="location" placeholder="city, postal code, etc."
+      />
+      <input type="submit" name="submit" id="submit"></input>
+    </form>
+
+    <div class="weather-container">
+      <h1>Loading Weather</h1>
+      <div class="weather-plate">
+        <div class="weather-card">
+          <h2 class="day">0000-00-00</h2>
+          <img class="weather-icon" src="images/day-cloud-rain.svg" alt="" />
+          <h2 class="temp">0</h2>
+          <h3 class="high">0</h3>
+          <h3 class="low">0</h3>
+        </div>
+        <div class="weather-card">
+          <h2 class="day">0000-00-00</h2>
+          <img class="weather-icon" src="images/day-cloudy.svg" alt="" />
+          <h2 class="temp">0</h2>
+          <h3 class="high">0</h3>
+          <h3 class="low">0</h3>
+        </div>
+        <div class="weather-card">
+          <h2 class="day">0000-00-00</h2>
+          <img class="weather-icon" src="images/day-sunny.svg" alt="" />
+          <h2 class="temp">0</h2>
+          <h3 class="high">0</h3>
+          <h3 class="low">0</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/weather.js"></script>
+  </body>
+</html>

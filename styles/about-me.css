@@ -1,0 +1,124 @@
+.content-container {
+  margin-top: 0px;
+}
+
+.who-what-where {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.who-what-where div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  border-left: 1px var(--main-color) solid;
+  border-right: 1px var(--main-color) solid;
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 33.333%;
+  height: 10rem;
+}
+.who-what-where div:nth-child(1) {
+  border-left: 2px var(--main-color) solid;
+  border-bottom-left-radius: 20px;
+}
+.who-what-where div:nth-child(3) {
+  border-right: 2px var(--main-color) solid;
+  border-bottom-right-radius: 20px;
+}
+
+.who-what-where h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.who-what-where p {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.about-body {
+  border-left: 2px var(--main-color) solid;
+  border-right: 2px var(--main-color) solid;
+  border-radius: 20px;
+}
+
+.about-body * {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.about-body img {
+  float: left;
+  max-height: 600px;
+  width: auto;
+  border: 2px var(--main-color) solid;
+  margin: 30px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.about-body h2{
+  margin-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+
+.about-body p{
+  margin-right: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .who-what-where p {
+    font-size: 1rem;
+  }
+  .about-body * {
+    font-size: 1rem;
+  }
+  .who-what-where h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .who-what-where{
+    flex-direction: column;
+    border: none;
+  }
+
+  .who-what-where div{
+    height: fit-content;
+    border: none;
+    padding: 0 0 10px 0;
+    margin: 10px 0 0 0;
+    border-bottom: 2px var(--main-color) solid;
+    border-radius: 0;
+  }
+  .who-what-where div:nth-child(1){
+    border: none;
+    border-bottom: 2px var(--main-color) solid;
+    border-radius: 0;
+  }.who-what-where div:nth-child(3){
+    border: none;
+    border-bottom: 2px var(--main-color) solid;
+    border-radius: 0;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .about-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-body p{
+    padding: 10px;
+  }
+}

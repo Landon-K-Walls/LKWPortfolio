@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landon K Walls Portfolio</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/mainContent.css" />
+    <link rel="stylesheet" href="styles/projects-resume.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-title">
+          <img src="images/Logo1Black.png" alt="" />
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-item-container">
+            <a href="about-me.html" class="nav-item">About Me</a>
+          </li>
+
+          <li class="nav-item-container">
+            <a href="contact.html" class="nav-item">Contact</a>
+          </li>
+
+          <li class="nav-item-container">
+            <button class="dark-toggle">
+              <img
+                src="images/DarkMode.png"
+                alt="darkMode"
+                class="dark-mode-icon"
+              />
+            </button>
+          </li>
+
+          <li class="nav-item-container">
+            <button class="info-button">
+              <div class="info-circle">i</div>
+            </button>
+          </li>
+        </ul>
+
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="content-container">
+      <div class="resume-quote-bar">
+        <a href="data/Landon-Walls-Resume.pdf" class="resume-download"
+          ><h3>Resume Pdf</h3></a
+        >
+        <p class="portfolio-quote">
+          "There is no investment you can make which will pay you so well as the
+          effort to scatter sunshine and good cheer through your
+          establishment."<br />
+          <br />
+          <b>-Orison S. Marden</b>
+        </p>
+      </div>
+      <hr />
+      <h1>- Projects -</h1>
+
+      <div class="port-entry-container">
+        <button class="carousel-button b-left"><</button>
+
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide" class="port-entry" tabindex="2">
+              <img src="images/sunrise.png" alt="" />
+              <div class="carousel-text">
+                <h2>Sunrise Weather</h2>
+                <p>Get the three day forecast for your area.</p>
+                <a href="projects/weather-app/weather-app.html">GO</a>
+              </div>
+            </li>
+
+            <li class="carousel-slide" class="port-entry" tabindex="1">
+              <img src="images/UnderConstruction.jpg" alt="" />
+              <div class="carousel-text">
+                <h2>Notes App</h2>
+                <p>
+                  A notes app using local browser storage. Uses React & JQuery.
+                  <br />
+                  <br />
+                  Scheduled date for completion: 04/15/2022
+                </p>
+                <a href="#">GO</a>
+              </div>
+            </li>
+
+            <li class="carousel-slide" class="port-entry" tabindex="2">
+              <img src="images/InPlanning.jpg" alt="" />
+              <div class="carousel-text">
+                <h2>Neon Radio</h2>
+                <p>
+                  A proof of concept for a repository of links to podcast
+                  websites.
+                </p>
+                <a href="#">GO</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel-button b-right">></button>
+
+        <div class="carousel-nav">
+          <button class="carousel-indicator">
+            <span>Sunrise Weather</span>
+          </button>
+          <button class="carousel-indicator active-slide">
+            <span>Notes App</span>
+          </button>
+          <button class="carousel-indicator">
+            <span>Neon Radio</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="page-info-modal">
+      <p>
+        All pages on this portfolio are designed to be responsive on mobile,
+        desktop, and tablet, and to have all information be a minimal amount of
+        clicks away. All pages excluding projects are also designed to fit all
+        information on screen without the need for a scroll bar.
+        <button>X</button>
+      </p>
+    </div>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/navBar.js"></script>
+    <script src="scripts/carousel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Landon K Walls</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/mainContent.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-title">
+          <img src="images/Logo1Black.png" alt="" />
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-item-container">
+            <a href="about-me.html" class="nav-item">About Me</a>
+          </li>
+
+          <li class="nav-item-container">
+            <a href="contact.html" class="nav-item">Contact</a>
+          </li>
+
+          <li class="nav-item-container">
+            <button class="dark-toggle">
+              <img
+                src="images/DarkMode.png"
+                alt="darkMode"
+                class="dark-mode-icon"
+              />
+            </button>
+          </li>
+
+          <li class="nav-item-container">
+            <button class="info-button">
+              <div class="info-circle">i</div>
+            </button>
+          </li>
+        </ul>
+
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="content-container">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xwkynbjk"
+        method="POST"
+      >
+        <label for="email">Your Name: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="required"
+        />
+
+        <label for="company-url"> Your Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="required"
+        />
+
+        <label for="message" id="message-label"> Your Message: </label>
+        <textarea
+          type="message"
+          id="message"
+          name="message"
+          placeholder="Required"
+          required
+        ></textarea>
+
+        <input type="submit" id="submit" />
+      </form>
+    </main>
+    <div class="page-info-modal">
+      <p>
+        <b>Why use this form instead of sending an email?</b><br />
+        <br />
+        This form allows me to recieve immediate notifications when a message is
+        sent, letting me to respond to messages faster.<br />
+        <br />
+        This form makes an http POST to formspree, which in turn sends me both
+        an email and a discord message, creating a notification that I can
+        respond to quicker than I can respond to a direct email. <br />
+        <br />
+        Or if you would like to email me directly: <b>LandonKWalls@gmail.com</b>
+        <button>X</button>
+      </p>
+    </div>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/navBar.js"></script>
+  </body>
+</html>
